@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="HeaderView_blue">#303F9F</color>
+    <color name="HeaderView_yellow">#faf2ff03</color>
+    <color name="HeaderView_green">#0fb70d</color>
+    <color name="HeaderView_pink">#FF4081</color>
+</resources>
