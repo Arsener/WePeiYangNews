@@ -123,31 +123,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         fetchingNewData();
         srl.setRefreshing(false);
         myRecyclerAdapter.notifyDataSetChanged();
-        //sleeping();
-        //Toast.makeText(MainActivity.this, "Refresh Finished!", Toast.LENGTH_SHORT).show();
-    }
-
-    public synchronized void sleeping() {
-
-        new Thread() {
-            public void run() {
-                try {
-                    sleep(2000);
-                    runOnUiThread(new Runnable() {
-
-                        @Override
-                        public void run() {
-                            fetchingNewData();
-                            srl.setRefreshing(false);
-                            myRecyclerAdapter.notifyDataSetChanged();
-                        }
-                    });
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }.start();
-
     }
 
     private void fetchingNewData() {
